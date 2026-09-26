@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador – Fazenda São José</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+    <!-- CABEÇALHO DO PAINEL -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <h2>🌱 Fazenda São José <span class="badge-admin">PAINEL</span></h2>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="btn-secondary-sm">Ver Site</a>
+                <button id="btn-sair" class="btn-logout">Sair do Sistema</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DO PAINEL -->
+    <main class="container admin-container">
+        
+        <div class="admin-header-title">
+            <h1>Painel de Controle</h1>
+            <p>Gerencie avisos, preços e dados da Fazenda São José</p>
+        </div>
+
+        <div class="admin-grid">
+
+            <!-- CARD 1: RECADOS -->
+            <div class="admin-card">
+                <div class="card-header">
+                    <span class="card-icon">📢</span>
+                    <h3>1. Recados e Avisos do Site</h3>
+                </div>
+                <div class="card-body">
+                    <label for="texto-recado">Texto do Recado (aparece no topo do site):</label>
+                    <input type="text" id="texto-recado" placeholder="Ex: Hoje tem moagem! Entregas a partir das 14h." class="admin-input">
+                    <div class="btn-group">
+                        <button id="btn-salvar-recado" class="btn-primary">Publicar Recado</button>
+                        <button id="btn-remover-recado" class="btn-danger">Remover Recado</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: PREÇOS -->
+            <div class="admin-card">
+                <div class="card-header">
+                    <span class="card-icon">🏷️</span>
+                    <h3>2. Alterar Preços dos Produtos</h3>
+                </div>
+                <div class="card-body grid-inputs">
+                    <div class="input-field">
+                        <label>Mel de Cana (1L)</label>
+                        <input type="text" id="input-preco-mel" placeholder="Ex: 15,00" class="admin-input">
+                    </div>
+                    <div class="input-field">
+                        <label>Rapadura Tradicional</label>
+                        <input type="text" id="input-preco-rapadura" placeholder="Ex: 10,00" class="admin-input">
+                    </div>
+                    <div class="input-field">
+                        <label>Alfinim Artesanal</label>
+                        <input type="text" id="input-preco-alfinim" placeholder="Ex: 12,00" class="admin-input">
+                    </div>
+                    <div class="input-field">
+                        <label>Batida de Cana (500ml)</label>
+                        <input type="text" id="input-preco-batida" placeholder="Ex: 8,00" class="admin-input">
+                    </div>
+                    <button id="btn-salvar-precos" class="btn-primary full-width">Atualizar Preços</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

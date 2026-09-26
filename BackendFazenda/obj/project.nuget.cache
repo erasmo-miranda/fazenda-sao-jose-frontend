@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LZ4cyF2StS0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\Web_Frontend\\fazenda-sao-jose\\BackendFazenda\\BackendFazenda.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}

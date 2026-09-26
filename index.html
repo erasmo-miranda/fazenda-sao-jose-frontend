@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazenda São José - Engenho Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CABEÇALHO / NAVEGAÇÃO -->
+<header class="header">
+    <nav class="navbar container">
+        <div class="logo">
+            <h2>🌱 Fazenda São José</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#fazenda">A Fazenda</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#precos">Preços</a></li>
+            <li><a href="#" class="btn-pedido">Fazer Pedido</a></li>
+            <li><a href="#" id="btn-abrir-login" class="btn-restrita">Área Restrita</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- SEÇÃO HERO -->
+<section class="hero">
+    <div class="hero-content container">
+        <span class="badge">TRADIÇÃO & QUALIDADE</span>
+        <h1>Sabor Artesanal Direto do Canavial</h1>
+        <p>Mel de cana puro, rapadura, alfinim e batida. Produção própria e artesanal do campo para a sua mesa.</p>
+        <div class="hero-buttons">
+            <a href="#produtos" class="btn-primary">Ver Produtos</a>
+            <a href="#" class="btn-secondary">Encomendar Agora</a>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO SOBRE -->
+<section id="fazenda" class="section container">
+    <h2>Nossa História & Tradição</h2>
+    <p>Do corte da cana até a moldagem da rapadura, mantendo viva a verdadeira essência do engenho piauiense.</p>
+</section>
+
+<!-- SEÇÃO DE PREÇOS -->
+<section id="precos" class="section container">
+    <h2>Tabela de Preços</h2>
+    <div class="grid-precos">
+        <div class="card-preco">
+            <h3>Mel de Cana (1L)</h3>
+            <p class="preco">R$ <span id="preco-mel">15,00</span></p>
+        </div>
+        <div class="card-preco">
+            <h3>Rapadura Tradicional</h3>
+            <p class="preco">R$ <span id="preco-rapadura">10,00</span></p>
+        </div>
+        <div class="card-preco">
+            <h3>Alfinim</h3>
+            <p class="preco">R$ <span id="preco-alfinim">12,00</span></p>
+        </div>
+        <div class="card-preco">
+            <h3>Batida</h3>
+            <p class="preco">R$ <span id="preco-batida">8,00</span></p>
+        </div>
+    </div>
+
+    <div id="box-pix" class="box-pix hidden">
+        <strong>Chave PIX para Pagamentos:</strong> <span id="chave-pix-display"></span>
+    </div>
+</section>
+
+<!-- MODAL DE LOGIN DO ADMINISTRADOR -->
+<div id="modal-login" class="modal hidden">
+    <div class="modal-content">
+        <span id="fechar-modal" class="fechar">&times;</span>
+        <h3>Acesso Administrativo</h3>
+        <p>Digite os dados de acesso ao painel:</p>
+        <form id="form-login">
+            <input type="text" id="usuario" placeholder="Seu usuário..." required>
+            <input type="password" id="senha" placeholder="Sua senha..." required>
+            <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+    </div>
+</div>
+
+<!-- RODAPÉ MODERNO -->
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <h3>Fazenda São José</h3>
+            <p>Engenho artesanal em Fazenda Nova - PI.</p>
+            <p>Tradição, sabor e qualidade no cultivo e produção de derivados da cana.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="#fazenda">A Fazenda</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#precos">Tabela de Preços</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contato & Localização</h4>
+            <p>📍 Fazenda Nova - PI</p>
+            <p>📞 (86) 99999-9999</p>
+            <p>✉️ contato@fazendasaojose.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+            <p>&copy; 2026 Fazenda São José. Todos os direitos reservados.</p>
+            <p class="dev-credits">Desenvolvido com 💚 por <strong>Erasmo Miranda</strong></p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
